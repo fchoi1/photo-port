@@ -31,15 +31,15 @@ function App() {
         currentCategory={currentCategory}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
-      ></Nav>
+      />
       <main>
         {!contactSelected ? (
           <>
-            <Gallery currentCategory={currentCategory}></Gallery>
-            <About></About>
+            <Gallery currentCategory={currentCategory} />
+            <About />
           </>
         ) : (
-          <ContactForm></ContactForm>
+          <ContactForm />
         )}
       </main>
     </div>
